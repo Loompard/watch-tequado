@@ -64,10 +64,22 @@ body {
 
 .translationStatus h3 {
   padding-top: 10px;
+  font-size: 30px;
 }
 
-.progress-box {
-  width: 300px;
+.allStatuses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  transform: translateY(-25px);
+}
+
+.statusWindow {
+  margin: 35px;
+  transform: scale(1.2);
+  width: 350px;
+  height: 125px;
   background: #18191c;
   padding-left: 10px;
   padding-right: 10px;
@@ -76,11 +88,16 @@ body {
   border-radius: 15px;
 }
 
-.progress-box h4 {
+.statusWindow:hover{
+  background: #43434d;
+}
+
+.statusWindow h4 {
   text-align: left;
 }
 
-.progress-box p {
+.statusWindow p {
+  padding-top: 5px;
   margin-bottom: 0px;
   text-transform: capitalize;
 }
@@ -97,11 +114,19 @@ body {
 .progress {
   background: #4dff82;
   border-radius: 15px;
+  height: 100%;
 }
 
 .engProgress {
   width: 100%;
-  height: 100%;
+}
+
+.ruProgress {
+  width: 89%;
+}
+
+.uaProgress {
+  width: 89%;
 }
 
 @keyframes shadow-change {
