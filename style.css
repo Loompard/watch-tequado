@@ -15,8 +15,31 @@ body {
   -ms-user-select: none; /*Internet Explorer, Microsoft Edge*/
 }
 
+footer {
+  width: 100%;
+  height: 50px;
+  background: #303036;
+  overflow: hidden;
+  transform: translateY(+10px) scale(1.008);
+}
+
+.left-align {
+  text-align: left;
+  align-items: left;
+  align-self: left;
+  align-content: left;
+}
+
+.right-align {
+  text-align: right;
+  align-items: right;
+  align-self: right;
+  align-content: right;
+}
+
 .tequbuttons {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .tequbuttons a {
@@ -42,12 +65,94 @@ body {
 }
 
 .tequadoavatar {
-  width: 20%;
-  height: 20%;
+  width: 30%;
+  height: 30%;
   border-radius: 50%;
   display: block;
   margin: 50px auto 50px auto;
   animation: shadow-change 10s infinite;
+}
+
+.faq-field {
+  marin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 680px;
+  border-radius: 10px;
+  height: auto;
+  background: #303036;
+  padding-bottom: 25px;
+}
+
+.faq-field h3 {
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+.faq-window {
+  width: 50%;
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+.faq-window i {
+  font-size: 24px;
+}
+
+.translatorlist {
+  display: flex;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.trwindow {
+  width: 350px;
+  height: auto;
+  border-radius: 25px;
+  background: #18191c;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 5px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.trwindow h3 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 26px;
+}
+
+.trwindow p {
+  font-size: 24px;
+}
+
+.loTag {
+  color: #4dff82;
+  text-shadow: 0px 0px 25px #4dff82;
+}
+
+.edTag {
+  color: #9027db;
+  text-shadow: 0px 0px 25px #9027db;
+}
+
+.peAvatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  transform: translate(-25%, +25%);
+  margin-top: -18px;
+}
+
+.idiotTar:hover {
+  transform: scale(3);
+  z-index: 100;
+  animation: 120s idiotAvatar infinite;
 }
 
 .translationStatus {
@@ -88,7 +193,7 @@ body {
   border-radius: 15px;
 }
 
-.statusWindow:hover{
+.statusWindow:hover, .trwindow:hover{
   background: #43434d;
 }
 
@@ -138,5 +243,14 @@ body {
   }
   100% {
     filter: drop-shadow(0px 0px 10px #18191c);
+  }
+}
+
+@keyframes idiotAvatar {
+  0% {
+    transform: rotate(0deg) scale(3)
+  }
+  100% {
+    transform: rotate(100000deg) scale(3)
   }
 }
