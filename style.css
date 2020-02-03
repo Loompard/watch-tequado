@@ -24,6 +24,11 @@ footer {
   transform: translateY(+10px) scale(1.008);
 }
 
+a {
+  text-decoration: underline;
+  color: #03dffc;
+}
+
 .left-align {
   text-align: left;
   align-items: left;
@@ -83,6 +88,12 @@ footer {
   height: auto;
   background: #303036;
   padding-bottom: 25px;
+  user-select: text;
+  -webkit-user-select: text;
+  -webkit-touch-callout:text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
 }
 
 .faq-field h3 {
@@ -91,7 +102,7 @@ footer {
 }
 
 .faq-window {
-  width: 50%;
+  width: 90%;
   margin-left: 25px;
   font-size: 20px;
 }
@@ -108,6 +119,12 @@ footer {
   width: 100%;
   height: auto;
   justify-content: center;
+  user-select: text;
+  -webkit-user-select: text;
+  -webkit-touch-callout:text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
 }
 
 .trwindow {
@@ -166,6 +183,12 @@ footer {
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 10px;
+  user-select: text;
+  -webkit-user-select: text;
+  -webkit-touch-callout:text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
 }
 
 .translationStatus h3 {
